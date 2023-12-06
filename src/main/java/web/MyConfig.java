@@ -11,7 +11,7 @@ public class MyConfig {
     @Bean
     public ResourceConfig resourceConfig(){
         ResourceConfig jerseyServlet = new ResourceConfig();
-        jerseyServlet.register(CompeResteJaxRSAPI.class);
+        jerseyServlet.register(CompteRestJaxRSAPI.class);
         return jerseyServlet;
     }
 }

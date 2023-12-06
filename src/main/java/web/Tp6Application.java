@@ -16,6 +16,7 @@ import java.util.Date;
 @EnableJpaRepositories(basePackages={"repositories"})
 @SpringBootApplication
 @EntityScan(basePackages = "entities")
+
 public class Tp6Application {
 
 	public static void main(String[] args) {
@@ -29,7 +30,7 @@ public class Tp6Application {
 		{
 			compteRepository.save(new Compte(null,30,new Date(), TypeCompte.EPARGNE, EtatCompte.ACTIVE));
 			compteRepository.save(new Compte(null,70,new Date(), TypeCompte.COURANT,EtatCompte.ACTIVE));
-
+			compteRepository.save(new Compte(null,120,new Date(), TypeCompte.COURANT,EtatCompte.ACTIVE));
 
 			System.out.println("solde des comptes");
 			Iterable <Compte> comptes = compteRepository.findAll();

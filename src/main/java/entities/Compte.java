@@ -13,10 +13,12 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+
 public class  Compte {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;
+
     private double solde ;
     private Date date_creation ;
     private TypeCompte type ;
